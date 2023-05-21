@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from preview.easetemplate.com/realwed/pages/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Mar 2023 20:18:29 GMT -->
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- Libs -->
+<link rel="stylesheet" href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../assets/fonts/wedding-icon-font/flaticon.css">
+<link rel="stylesheet" href="../assets/fonts/fontello/css/fontello.css">
+
+
+
+
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="../assets/css/theme.min.css">
+  <title>Sign up Template - Wedding Listing and Directory Template - RealWed</title>
+
+</head>
+<style>
+  body {
+  background-color: black;
+}
+</style>
+<body>
+
+  <!-- sign up -->
+  <section class="py-8 py-md-4 py-lg-0 ">
+    <div class="container d-flex flex-column">
+      <div class="row align-items-center justify-content-center no-gutters min-vh-100 ">
+        <div class="col-lg-5 col-md-7">
+          <!-- logo -->
+          <div class="text-center my-4">
+            <a href="../index.html">
+            <svg width="124" height="24" viewBox="0 0 124 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9247 3.32383L12.0002 4.4539L13.0757 3.3223C15.6003 0.669641 20.2295 1.58657 21.9005 4.92156C22.6865 6.49016 22.862 8.75335 21.4295 11.6452C20.7221 13.0701 19.6247 14.6394 18.027 16.3189C22.6163 9.767 15.3208 5.76655 12.0004 9.1158C8.67961 5.76619 1.38285 9.76844 5.97523 16.3214C4.37607 14.6409 3.27786 13.0708 2.57092 11.6452C1.13838 8.75488 1.31538 6.49016 2.09991 4.92156C3.77096 1.58657 8.4001 0.671174 10.9247 3.32383ZM11.7362 1.9929C4.91849 -4.42101 -11 7.70455 12.0002 23.2402C35.0004 7.70302 19.0804 -4.42408 12.2642 1.99444C12.1729 2.07776 12.0848 2.16472 12.0002 2.2551C11.9147 2.16464 11.8262 2.07724 11.7362 1.9929Z" fill="#BE9552"/>
+              <path d="M43.464 17.536L44.184 19.96C43.864 20.2 43.472 20.384 43.008 20.512C42.544 20.656 42.056 20.728 41.544 20.728C39.752 20.728 38.344 19.936 37.32 18.352L34.848 14.56C34.592 14.16 34.328 13.88 34.056 13.72C33.784 13.56 33.488 13.48 33.168 13.48H33.048V20.512H30V3.47195H35.304C37.464 3.47195 39.096 3.91995 40.2 4.81595C41.32 5.71195 41.88 6.94395 41.88 8.51195C41.88 9.45595 41.672 10.272 41.256 10.96C40.84 11.632 40.272 12.168 39.552 12.568C38.832 12.968 38.016 13.224 37.104 13.336C37.584 13.592 38.024 14.024 38.424 14.632L39.768 16.624C40.12 17.136 40.448 17.488 40.752 17.68C41.072 17.872 41.472 17.968 41.952 17.968C42.512 17.968 43.016 17.824 43.464 17.536ZM35.088 6.01595H33.048V11.032H34.944C36.256 11.032 37.224 10.832 37.848 10.432C38.472 10.032 38.784 9.39195 38.784 8.51195C38.784 6.84795 37.552 6.01595 35.088 6.01595Z" fill="#212529"/>
+              <path d="M50.0417 20.728C48.7297 20.728 47.5937 20.488 46.6337 20.008C45.6897 19.512 44.9617 18.808 44.4497 17.896C43.9377 16.984 43.6817 15.896 43.6817 14.632C43.6817 13.368 43.9457 12.256 44.4737 11.296C45.0017 10.32 45.7137 9.55995 46.6097 9.01595C47.5217 8.47195 48.5537 8.19995 49.7057 8.19995C51.5777 8.19995 52.9537 8.83995 53.8337 10.12C54.7297 11.384 55.0417 13.136 54.7697 15.376H46.6577C46.7217 16.224 47.0657 16.904 47.6897 17.416C48.3137 17.928 49.1697 18.184 50.2577 18.184C50.7697 18.184 51.2817 18.072 51.7937 17.848C52.3217 17.624 52.7697 17.28 53.1377 16.816L54.8417 18.544C54.2977 19.232 53.6337 19.768 52.8497 20.152C52.0817 20.536 51.1457 20.728 50.0417 20.728ZM49.7537 10.408C48.9377 10.408 48.2657 10.664 47.7377 11.176C47.2097 11.688 46.8737 12.376 46.7297 13.24H52.2497C52.2817 12.248 52.0657 11.528 51.6017 11.08C51.1377 10.632 50.5217 10.408 49.7537 10.408Z" fill="#212529"/>
+              <path d="M68.1369 8.43995V20.512H65.1609L65.2569 18.4C64.8249 19.136 64.2569 19.712 63.5529 20.128C62.8649 20.528 62.0729 20.728 61.1769 20.728C60.1209 20.728 59.2249 20.488 58.4889 20.008C57.7529 19.512 57.1929 18.832 56.8089 17.968C56.4249 17.104 56.2329 16.112 56.2329 14.992C56.2329 13.648 56.4969 12.472 57.0249 11.464C57.5529 10.44 58.2729 9.63995 59.1849 9.06395C60.1129 8.48795 61.1529 8.19995 62.3049 8.19995C63.0729 8.19995 63.7529 8.36795 64.3449 8.70395C64.9369 9.02395 65.3929 9.45595 65.7129 9.99995L66.0009 8.43995H68.1369ZM62.5209 10.792C61.5289 10.792 60.7369 11.168 60.1449 11.92C59.5529 12.672 59.2569 13.656 59.2569 14.872C59.2569 15.912 59.4809 16.72 59.9289 17.296C60.3769 17.872 60.9929 18.16 61.7769 18.16C62.4169 18.16 62.9929 17.976 63.5049 17.608C64.0329 17.24 64.4489 16.728 64.7529 16.072C65.0569 15.416 65.2089 14.664 65.2089 13.816C65.2089 12.872 64.9689 12.136 64.4889 11.608C64.0089 11.064 63.3529 10.792 62.5209 10.792Z" fill="#212529"/>
+              <path d="M74.2704 20.728C73.1184 20.728 72.2464 20.416 71.6544 19.792C71.0624 19.168 70.7664 18.28 70.7664 17.128V2.75195H73.6944V16.888C73.6944 17.752 74.0944 18.184 74.8944 18.184C75.2944 18.184 75.6464 18.088 75.9504 17.896L76.6704 20.032C76.4144 20.224 76.0704 20.384 75.6384 20.512C75.2064 20.656 74.7504 20.728 74.2704 20.728Z" fill="#212529"/>
+              <path d="M96.3263 3.47195H99.3023L94.3583 20.512H90.8063L87.7103 7.50395L84.0143 20.512H80.4383L76.2143 3.47195H79.3583L82.4303 16.504L86.0783 3.47195H89.7023L92.7503 16.432L96.3263 3.47195Z" fill="#212529"/>
+              <path d="M105.215 20.728C103.903 20.728 102.767 20.488 101.807 20.008C100.863 19.512 100.135 18.808 99.6234 17.896C99.1114 16.984 98.8554 15.896 98.8554 14.632C98.8554 13.368 99.1194 12.256 99.6474 11.296C100.175 10.32 100.887 9.55995 101.783 9.01595C102.695 8.47195 103.727 8.19995 104.879 8.19995C106.751 8.19995 108.127 8.83995 109.007 10.12C109.903 11.384 110.215 13.136 109.943 15.376H101.831C101.895 16.224 102.239 16.904 102.863 17.416C103.487 17.928 104.343 18.184 105.431 18.184C105.943 18.184 106.455 18.072 106.967 17.848C107.495 17.624 107.943 17.28 108.311 16.816L110.015 18.544C109.471 19.232 108.807 19.768 108.023 20.152C107.255 20.536 106.319 20.728 105.215 20.728ZM104.927 10.408C104.111 10.408 103.439 10.664 102.911 11.176C102.383 11.688 102.047 12.376 101.903 13.24H107.423C107.455 12.248 107.239 11.528 106.775 11.08C106.311 10.632 105.695 10.408 104.927 10.408Z" fill="#212529"/>
+              <path d="M123.311 2.75195V20.512H120.335L120.431 18.4C119.999 19.152 119.439 19.728 118.751 20.128C118.063 20.528 117.263 20.728 116.351 20.728C115.295 20.728 114.399 20.488 113.663 20.008C112.927 19.512 112.367 18.832 111.983 17.968C111.599 17.104 111.407 16.112 111.407 14.992C111.407 13.648 111.671 12.472 112.199 11.464C112.727 10.44 113.447 9.63995 114.359 9.06395C115.287 8.48795 116.327 8.19995 117.479 8.19995C118.087 8.19995 118.639 8.30395 119.135 8.51195C119.647 8.71995 120.071 9.00795 120.407 9.37595L120.383 8.39195V2.75195H123.311ZM117.695 10.792C116.703 10.792 115.911 11.168 115.319 11.92C114.727 12.672 114.431 13.656 114.431 14.872C114.431 15.912 114.655 16.72 115.103 17.296C115.551 17.872 116.167 18.16 116.951 18.16C117.591 18.16 118.167 17.976 118.679 17.608C119.207 17.24 119.623 16.728 119.927 16.072C120.231 15.416 120.383 14.664 120.383 13.816C120.383 12.872 120.143 12.136 119.663 11.608C119.183 11.064 118.527 10.792 117.695 10.792Z" fill="#212529"/>
+              </svg>
+              </a>
+              </div>
+          <!-- card -->
+          <div class="card border-0 shadow rounded-4">
+            <!-- card body -->
+            <div class="card-body p-6">
+              <!-- form -->
+              <form action="register" method="POST">
+                @csrf
+                <h1 class="h3 mb-3">Sign up with your email</h1>
+                <!-- name -->
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="name" placeholder="Your name">
+                  <label for="name" class="form-label">First and last name</label>
+                  @error('name')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
+                <!-- email -->
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" name="email" placeholder="Add email address">
+                  <label for="email" class="form-label">Email</label>
+                  @error('email')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
+                <!-- password -->
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" name="password" placeholder="**">
+                  <label for="password" class="form-label">Password</label>
+                  @error('password')
+                        <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                </div>
+                
+                <!-- text -->
+                <div class="mb-3">
+                  <p class="fs-5 lh-2">Byclicking'Request pricing', I agree to RealWed <a href="#">Privacy
+                      Policy</a> and <a href="#">Terms of Use</a></p>
+
+                </div>
+                <!-- button -->
+                <div class="d-grid mb-3">
+                  <button type="submit" class="btn btn-primary">Sign Up</button>
+                </div>
+              </form>
+              <div class="mb-5">
+                <p>Already have an account? <a href="login">Sign in</a></p>
+              </div>
+              <div class="border-bottom"></div>
+              <div class="text-center mt-n3">
+                <small class="bg-white px-3">OR</small>
+              </div>
+              <!-- social button -->
+              <div class="d-grid mt-4">
+                <a href="#" class="btn btn-outline-dark border-2 mb-2"><i class="bi bi-facebook me-2"></i><span
+                    class="align-middle">Continue with facebook</span></a>
+                <a href="#" class="btn btn-outline-dark border-2"><i class="bi bi-google me-2"></i><span
+                    class="align-middle">Continue with google</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- footer text -->
+          <div class="mt-4 text-center">
+            <small>©  <span id="copyright">  2018 - 
+              <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+          </span> realwed.com</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- scripts -->
+  <!-- Libs JS -->
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+
+
+
+
+
+
+<!-- Theme JS -->
+<script src="../assets/js/theme.min.js"></script>
+
+</body>
+
+
+<!-- Mirrored from preview.easetemplate.com/realwed/pages/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Mar 2023 20:18:29 GMT -->
+</html>
