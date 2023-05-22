@@ -24,6 +24,7 @@ Route::view('login', 'user.login');
 Route::post('register', [UserController::class,'register']);
 Route::post('login', [UserController::class,'login']);
 
+Route::view('about', 'user.about');
 
 
 
