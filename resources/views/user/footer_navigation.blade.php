@@ -17,41 +17,35 @@
                             </svg>
 
                         </a>
-                        <p class="mb-0 mt-4 pe-lg-16">Discover the most high rated wedding vendors and plan your wedding more better, forever.</p>
+                        <p class="mb-0 mt-4 pe-lg-16">Quran Learn Academy provides quality Quran education with a professional and enthusiastic professionals.</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-6">
                     <!-- list -->
                     <div class="mb-4 mb-lg-0">
-                        <h3 class="mb-3">Company</h3>
+                        <h3 class="mb-3">Quick Links</h3>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-body text-hover-primary">About us</a></li>
-                            <li><a href="#" class="text-body text-hover-primary">Careers</a></li>
-                            <li><a href="#" class="text-body text-hover-primary">Press Kit</a></li>
-                            <li><a href="#" class="text-body text-hover-primary">Partner</a></li>
+                            <li><a href="{{url('about')}}" class="text-body text-hover-primary">About us</a></li>
+                            <li><a href="{{url('services')}}" class="text-body text-hover-primary">Services</a></li>
+                            <li><a href="{{url('packages')}}" class="text-body text-hover-primary">Packages</a></li>
+                            <li><a href="{{url('careers')}}" class="text-body text-hover-primary">Careers</a></li>
+                            <li><a href="{{url('downloads')}}" class="text-body text-hover-primary">Downloads</a></li>
+                            <li><a href="{{url('blogs')}}" class="text-body text-hover-primary">Blog</a></li>
 
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-6">
-                    <!-- list -->
-                    <div class="mb-4 mb-lg-0">
-                        <h3 class="mb-3">Support</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-body text-hover-primary">Get in Touch</a></li>
-                            <li><a href="#" class="text-body text-hover-primary">Help Center</a></li>
-                            <li><a href="#" class="text-body text-hover-primary">Live Chat</a></li>
-                            <li><a href="#" class="text-body text-hover-primary">How it works</a></li>
-
-                        </ul>
-                    </div>
-                </div>
+                
                 <div class="col-lg-3 col-md-6 col-12">
                     <!-- contact -->
                     <div class="mb-4 mb-lg-0">
-                        <h3 class="mb-3">Contact us</h3>
-                        <p class="mb-1">Email:<a href="#" class="ms-1">support@realwed.com</a></p>
-                        <p>Phone:<span class="text-dark fw-semi-bold ms-2">(000)123 456 789</span></p>
+                        <h3 class="mb-3">Get In Touch</h3>
+                        <p style="color: #BE956B"><i class="bi bi-whatsapp"></i> USA: +92 3319279998 </p>
+                        <p style="color: #BE956B"><i class="bi bi-whatsapp"></i> UK: +92 3319279998 </p>
+                        <p style="color: #BE956B"><i class="bi bi-whatsapp"></i> PAK: +92 3319279998 </p>
+                        <p style="color: #BE956B"><i class="bi bi-envelope"></i> khansafi470@gmail.com </p>
+
+
                     </div>
                 </div>
             </div>

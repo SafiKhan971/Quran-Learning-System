@@ -178,10 +178,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <div class="text-center mb-8">
+                    <div class="text-center mb-3">
                         <h2 class="mb-1">Customer Feedback</h2>
                         <p class="mb-0">
-                            Find out what about real couple have to say about related.
+                        Customers praise the online Quran classes for their high-quality teaching, 
+                        their flexible timings, and their supportive staff.
                         </p>
                     </div>
                 </div>
@@ -204,11 +205,11 @@
                                     Holy Quran Academy to anyone who wants to learn Quran online. ”
                                 </p>
                                 <div class="mt-5">
-                                    <img src="../assets/images/gallery-img/testimonial-1.jpg" alt="testimonial-1" class="rounded-circle mb-3" />
+                                    <img src="{{asset('assets/images/ahmad.jpg')}}" alt="testimonial-1" class="rounded-circle mb-3" />
                                 </div>
                                 <div>
-                                    <h4 class="mb-0">Venue Vendor</h4>
-                                    <p class="mb-0 small">Ahmedabad</p>
+                                    <h4 class="mb-0">Ahmed</h4>
+                                    <p class="mb-0 small">New York</p>
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="var(--rw-warning)" class="bi bi-star-fill" viewBox="0 0 16 16">
                                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -249,11 +250,11 @@
                                     fun and interactive.”
                                 </p>
                                 <div class="mt-5">
-                                    <img src="../assets/images/gallery-img/testimonial-2.jpg" alt="testimonial-1" class="rounded-circle mb-3" />
+                                    <img src="{{asset('assets/images/fatima.jpg')}}" alt="testimonial-1" class="rounded-circle mb-3" />
                                 </div>
                                 <div>
-                                    <h4 class="mb-0">Photography Vendor</h4>
-                                    <p class="mb-0 small">Baroda</p>
+                                    <h4 class="mb-0">Fatima Batool</h4>
+                                    <p class="mb-0 small">United Kingdom</p>
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="var(--rw-warning)" class="bi bi-star-fill" viewBox="0 0 16 16">
                                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -293,11 +294,11 @@
                                      I thank Holy Quran Academy for their excellent work.”
                                 </p>
                                 <div class="mt-5">
-                                    <img src="../assets/images/gallery-img/testimonial-3.jpg" alt="testimonial-1" class="rounded-circle mb-3" />
+                                    <img src="{{asset('assets/images/muh.jpg')}}" alt="testimonial-1" class="rounded-circle mb-3" />
                                 </div>
                                 <div>
-                                    <h4 class="mb-0">Florist Vendor</h4>
-                                    <p class="mb-0 small">Bhavnagar</p>
+                                    <h4 class="mb-0">Muhammad</h4>
+                                    <p class="mb-0 small">Torronto</p>
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="var(--rw-warning)" class="bi bi-star-fill" viewBox="0 0 16 16">
                                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />

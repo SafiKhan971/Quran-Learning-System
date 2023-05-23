@@ -25,6 +25,19 @@ Route::post('register', [UserController::class,'register']);
 Route::post('login', [UserController::class,'login']);
 
 Route::view('about', 'user.about');
+Route::view('services', 'user.services');
+Route::view('packages', 'user.packages');
+Route::view('payments', 'user.payments');
+Route::view('careers', 'user.careers');
+Route::view('downloads', 'user.downloads');
+Route::view('blogs', 'user.blogs');
+Route::view('contact', 'user.contact');
+
+
+
+
+
+
 
 
 

@@ -37,7 +37,7 @@
                         <ul class="navbar-nav me-auto ms-lg-3">
                             
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">
+                                <a class="nav-link " href="{{url('/')}}">
                                     Home
                                 </a>
                             </li>
@@ -49,43 +49,43 @@
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">
+                                <a class="nav-link " href="{{url('services')}}">
                                     Our Services
                                 </a>
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">
+                                <a class="nav-link " href="{{url('packages')}}">
                                     Packages
                                 </a>
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">
+                                <a class="nav-link " href="{{url('payments')}}">
                                     Payments
                                 </a>
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">
+                                <a class="nav-link " href="{{url('careers')}}">
                                     Careers
                                 </a>
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">
+                                <a class="nav-link " href="{{url('downloads')}}">
                                     Downloads
                                 </a>
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">
+                                <a class="nav-link " href="{{url('blogs')}}">
                                     Blog
                                 </a>
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link " href="#">
+                                <a class="nav-link " href="{{url('contact')}}">
                                     Contact
                                 </a>
                             </li>
