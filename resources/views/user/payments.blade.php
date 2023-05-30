@@ -17,7 +17,7 @@
                 <div class="col-md-12">
                     <div class="text-center mt-4">
                         <h1 class="display-6 fw-semi-bold">Payments</h1>
-                        <h2 class="subtitle">We accept Visa, Master, PayPal, Western Union, EasyPaisa & JazzCash </h2>
+                        <h2 class="subtitle">We accept Visa, Mastercard, PayPal, Pioneer, EasyPaisa & JazzCash </h2>
                     </div>
                 </div>
             </div>
@@ -40,10 +40,10 @@
                     <img class="img-fluid" src="{{asset('assets/images/pioneer2.jpg')}}" alt="">
                 </div>
                 <div class="col">
-                    <img class="img-fluid" src="{{asset('assets/images/visa.png')}}" alt="">
+                    <img class="img-fluid" src="{{asset('assets/images/easy.png')}}" alt="">
                 </div>
                 <div class="col">
-                    <img class="img-fluid" src="{{asset('assets/images/visa.png')}}" alt="">
+                    <img class="img-fluid" src="{{asset('assets/images/jazz.jpg')}}" alt="">
                 </div>
             </div>
         </div>

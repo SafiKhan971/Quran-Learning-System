@@ -91,10 +91,19 @@
                             </li>
                             
                         </ul>
-                        <div class="p-3 p-lg-0">
-                            <a href="{{ url('login') }}" class="btn btn-secondary shadow-sm">Sign in</a>
-                            <a href="{{ url('register') }}" class="btn btn-primary shadow-sm">Get Started Now</a>
+                        @if(session()->has('user_id'))
+                        <div class="d-flex justify-content-between p-3 p-lg-0">
+                            <a href="{{ url('profile') }}" class="btn btn-secondary shadow-sm" style="margin-right: 5px;">My Profile</a>
+                            <form action="logout" method="post">
+                                @csrf
+                            <button type="submit" class="btn btn-primary shadow-sm">Log Out</button>
+                            </form>
                         </div>
+                        @else
+                        <div class="p-3 p-lg-0">
+                            <a href="{{ url('login') }}" class="btn btn-primary shadow-sm">Sign in</a>
+                        </div>
+                        @endif
                     </div>
                 </nav>
             </div>

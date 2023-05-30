@@ -23,11 +23,7 @@
   <title>Sign up Template - Wedding Listing and Directory Template - RealWed</title>
 
 </head>
-<style>
-  body {
-  background-color: black;
-}
-</style>
+
 <body>
 
   <!-- sign up -->

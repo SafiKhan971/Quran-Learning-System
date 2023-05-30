@@ -1,10 +1,9 @@
 <style>
     @media only screen and (max-width: 480px) {
-  .topbar{
-    font-size: 9px;
-  }
-}
-
+        .topbar {
+            font-size: 9px;
+        }
+    }
 </style>
 <div class="navbar-transparent navbar-position">
     <div class="container">
@@ -34,8 +33,8 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto ms-lg-3">
-                            
+                        <ul class="navbar-nav me-auto ms-lg-2">
+
                             <li class="nav-item ">
                                 <a class="nav-link " href="{{url('/')}}">
                                     Home
@@ -89,12 +88,21 @@
                                     Contact
                                 </a>
                             </li>
-                            
+
                         </ul>
-                        <div class="p-3 p-lg-0">
-                            <a href="{{ url('login') }}" class="btn btn-secondary shadow-sm">Sign in</a>
-                            <a href="{{ url('register') }}" class="btn btn-primary shadow-sm">Get Started Now</a>
+                        @if(session()->has('user_id'))
+                        <div class="d-flex justify-content-between p-3 p-lg-0">
+                            <a href="{{ url('profile') }}" class="btn btn-secondary shadow-sm" style="margin-right: 5px;" >My Profile</a>
+                            <form action="logout" method="post">
+                                @csrf
+                            <button type="submit" class="btn btn-primary shadow-sm">Log Out</button>
+                            </form>
                         </div>
+                        @else
+                        <div class="p-3 p-lg-0">
+                            <a href="{{ url('login') }}" class="btn btn-primary shadow-sm">Sign in</a>
+                        </div>
+                        @endif
                     </div>
                 </nav>
             </div>

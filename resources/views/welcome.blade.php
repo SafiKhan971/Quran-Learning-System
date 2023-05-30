@@ -1,51 +1,17 @@
 <!-- header -->
 @include('user/header')
 <style>
-    .button {
-        padding: 1em 2em;
-        border: none;
-        border-radius: 5px;
-        font-weight: bold;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        color: #BE9552;
-        transition: all 1000ms;
-        font-size: 15px;
-        position: relative;
-        overflow: hidden;
-        outline: 2px solid #BE9552;
-    }
-
-    button:hover {
-        color: #ffffff;
-        transform: scale(1.1);
-        outline: 2px solid #ddb77a;
-        box-shadow: 4px 5px 17px -4px #BE9552;
-    }
-
-    button::before {
-        content: "";
-        position: absolute;
-        left: -50px;
-        top: 0;
-        width: 0;
-        height: 100%;
-        background-color: #BE9552;
-        transform: skewX(45deg);
-        z-index: -1;
-        transition: width 1000ms;
-    }
-
-    button:hover::before {
-        width: 250%;
-    }
-
     .title {
         font-size: 4rem;
     }
 
     .textsize {
         font-size: 17px;
+    }
+
+    .demo{
+        padding: 10px 30px;
+        font-size: 20px;
     }
 
 
@@ -60,9 +26,9 @@
         }
 
         .demoButton {
-            width: 280px;
+            width: 150;
             height: 35px;
-            font-size: 10px;
+            font-size: 13px;
             padding: 5px 8px;
             margin-top: 0px;
         }
@@ -75,6 +41,7 @@
 </style>
 <!-- navbar -->
 @include('user/navigation')
+
 <!-- hero section -->
 <section class="py-14 py-lg-21" style="background: url(assets/images/banner/hero-img.jpg)no-repeat; background-size: cover; background-position: center center; height:100vh">
     <div class="container">
@@ -85,7 +52,7 @@
                 <img class="img-fluid" src="{{ asset('assets/images/banner/bsml-txt.png') }}" alt="" srcset="">
                 <h2 class="text-light mt-3 subtitle">Transform Your Spiritual Journey with</h2>
                 <h3 class="text-light title title2">Holy Quran Academy</h3>
-                <button type="submit" class="button demoButton">Request Demo Class</button>
+                <a href="" class="btn btn-primary demoButton shadow-sm demo">Request Demo Class</a>
             </div>
         </div>
     </div>
@@ -221,99 +188,27 @@
         </div>
         <div class="row">
             <!-- col -->
+            @foreach($blogs as $item)
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="mb-6">
-                    <a href="">
-                        <img src="assets/images/blog/wc-img-1.jpg" class="d-block w-100 rounded" alt="...">
+                    <a href="{{url('blog_single', $item->slug)}}">
+                        <img src="{{ asset('storage/' . $item->image) }}" class="d-flex img-fluid w-100 rounded" alt="...">
                         </a>
                     <!-- content -->
                     <div class="mt-3">
                         <h3 class="mb-0">
-                            <a href="pages/listing-single.html" class="text-inherit">Lorem ipsum dolor sit amet</a>
+                            <a href="{{url('blog_single', $item->slug)}}" class="text-inherit"> {{$item->name}} </a>
                         </h3>
-                        <p class="mb-1">New York, US</p>
+                        <p class="mb-1">{{$item->title}}</p>
+                        <p> <a href="{{url('blog_single', $item->slug)}}"> Read More </a> </p>
                     </div>
                 </div>
             </div>
-
-            <!-- col -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="mb-6">
-                        <img src="assets/images/blog/wc-img-1.jpg" class="d-block w-100 rounded" alt="...">
-                    <!-- content -->
-                    <div class="mt-3">
-                        <h3 class="mb-0">
-                            <a href="pages/listing-single.html" class="text-inherit">Lorem ipsum dolor sit amet</a>
-                        </h3>
-                        <p class="mb-1">New York, US</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- col -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="mb-6">
-                        <img src="assets/images/blog/wc-img-1.jpg" class="d-block w-100 rounded" alt="...">
-                    <!-- content -->
-                    <div class="mt-3">
-                        <h3 class="mb-0">
-                            <a href="pages/listing-single.html" class="text-inherit">Lorem ipsum dolor sit amet</a>
-                        </h3>
-                        <p class="mb-1">New York, US</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- col -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="mb-6">
-                        <img src="assets/images/blog/wc-img-1.jpg" class="d-block w-100 rounded" alt="...">
-                    <!-- content -->
-                    <div class="mt-3">
-                        <h3 class="mb-0">
-                            <a href="pages/listing-single.html" class="text-inherit">Lorem ipsum dolor sit amet</a>
-                        </h3>
-                        <p class="mb-1">New York, US</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- col -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="mb-6">
-                    <a href="">
-                        <img src="assets/images/blog/wc-img-1.jpg" class="d-block w-100 rounded" alt="...">
-                        </a>
-                    <!-- content -->
-                    <div class="mt-3">
-                        <h3 class="mb-0">
-                            <a href="pages/listing-single.html" class="text-inherit">Lorem ipsum dolor sit amet</a>
-                        </h3>
-                        <p class="mb-1">New York, US</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- col -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="mb-6">
-                        <img src="assets/images/blog/wc-img-1.jpg" class="d-block w-100 rounded" alt="...">
-                    <!-- content -->
-                    <div class="mt-3">
-                        <h3 class="mb-0">
-                            <a href="pages/listing-single.html" class="text-inherit">Lorem ipsum dolor sit amet</a>
-                        </h3>
-                        <p class="mb-1">New York, US</p>
-                    </div>
-                </div>
-            </div>
-
-
+            @endforeach
         </div>
 
     </div>
 </section>
-
 <!-- footer -->
 
 @include('user/footer_navigation')

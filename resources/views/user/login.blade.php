@@ -24,11 +24,7 @@
     <title>Sign in Template - Wedding Listing and Directory Template - RealWed</title>
 
 </head>
-<style>
-    body {
-    background-color: black;
-}
-</style>
+
 <body>
     <!-- sign in -->
     <section class="py-8 py-md-4 py-lg-0 ">
