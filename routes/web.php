@@ -39,6 +39,9 @@ Route::post('register', [UserController::class, 'register']);
 Route::post('login', [UserController::class, 'login']);
 Route::post('logout', [UserController::class, 'logout']);
 Route::get('profile', [UserController::class, 'profile']);
+Route::post('update-account', [UserController::class, 'updateAccount']);
+
+
 
 
 Route::view('about', 'user.about');
@@ -77,6 +80,5 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/deletecategory/{id}',[AdminController::class,'deleteCategory']);
     Route::get('updatecategory/{id}',[AdminController::class,'showCategory']);
     Route::post('updatecategory/{id}',[AdminController::class,'updateCategory']);
-
 
 });

@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
-use App\Models\BlogCategory;
 use App\Models\User;
+use App\Models\BlogCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -84,7 +85,28 @@ class UserController extends Controller
 
     public function profile()
     {
-        return view('user/profile');
+        $id = session()->get('user_id');
+        $data = User::where('id',$id)->first();
+        return view('user/profile' , compact('data'));
+    }
+
+    public function updateAccount(Request $request)
+    {
+        $id = session()->get('user_id');
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->address = $request->address;
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->getClientOriginalName();
+
+            $request->file('image')->storeAs('public/', $image);
+
+            $user->image = $image;
+        }
+        $user->save();
+        return redirect()->back();
     }
 
 
