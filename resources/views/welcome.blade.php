@@ -1,44 +1,5 @@
 <!-- header -->
 @include('user/header')
-<style>
-    .title {
-        font-size: 4rem;
-    }
-
-    .textsize {
-        font-size: 17px;
-    }
-
-    .demo{
-        padding: 10px 30px;
-        font-size: 20px;
-    }
-
-
-
-    @media only screen and (max-width: 480px) {
-        .title2 {
-            font-size: 30px;
-        }
-
-        .subtitle {
-            font-size: 14px;
-        }
-
-        .demoButton {
-            width: 150;
-            height: 35px;
-            font-size: 13px;
-            padding: 5px 8px;
-            margin-top: 0px;
-        }
-
-        .image2 {
-            margin-left: 102px;
-        }
-
-    }
-</style>
 <!-- navbar -->
 @include('user/navigation')
 
@@ -52,20 +13,19 @@
                 <img class="img-fluid" src="{{ asset('assets/images/banner/bsml-txt.png') }}" alt="" srcset="">
                 <h2 class="text-light mt-3 subtitle">Transform Your Spiritual Journey with</h2>
                 <h3 class="text-light title title2">Holy Quran Academy</h3>
-                <a href="" class="btn btn-primary demoButton shadow-sm demo">Request Demo Class</a>
+                <a href="" class="btn btn-primary demo demoButton shadow-sm">Request Demo Class</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Begin Learning -->
-
 <section class="py-lg-10 py-6">
     <div class="container">
         <div class="row align-items-center mb-3">
             <div class="text-center mb-3">
                 <h1 class="mb-3">Begin Learning Holy Quran Now in 3 Easy Steps</h1>
-                <p class="lead subtitle">Holy Quran Academy makes it easy for you and your family to
+                <p class="subtitle textsize">Holy Quran Academy makes it easy for you and your family to
                     learn the holy Quran online. Our registration process is simple and quick, so you
                     can start your learning journey without any hassle.
                     Just follow these steps to join our online Quran course and enjoy the benefits of
@@ -75,7 +35,7 @@
 
             <div class="offset-lg-1 col-lg-7 mb-2">
                 <h2>1. Register</h2>
-                <p class="lead subtitle textsize">
+                <p class="subtitle textsize">
                     The first step is to register for our online Quran course. You can choose
                     from different levels and topics according to your needs and goals. You
                     will also get access to qualified and experienced Quran teachers who will
@@ -83,7 +43,7 @@
                 </p>
 
                 <h2>2. Schedule Your Free Trial Now</h2>
-                <p class="lead subtitle textsize">
+                <p class="subtitle textsize">
                     The second step is to schedule your classes at your convenience. You can
                     learn Quran anytime and anywhere, as long as you have an internet connection
                     and a device. You can also adjust your pace and frequency of classes according
@@ -91,7 +51,7 @@
                 </p>
 
                 <h2>3. Start Your Divine Journey with Your Initial Class</h2>
-                <p class="lead subtitle textsize">
+                <p class="subtitle textsize">
                     The third step is to enjoy learning Quran with our interactive and engaging lessons.
                     You will learn how to read, recite, memorize, and understand the Quran with clarity
                     and confidence. You will also benefit from the spiritual and practical guidance of
@@ -122,7 +82,7 @@
             <div class="col-lg-6">
                 <h3>Few words about</h3>
                 <h1>Holy Quran Academy</h1>
-                <p class="lead subtitle textsize">
+                <p class=" subtitle textsize">
                     Holy Quran Academy is an online platform that aims to help Muslims around
                     the world learn and understand the Quran. We offer a variety of courses and
                     services, such as Quran reading, recitation, memorization, translation, tafseer,
@@ -146,7 +106,7 @@
         <div class="row align-items-center mb-lg-14 mb-10">
             <div class="offset-lg-1 col-lg-6">
                 <h1>Why Choose Us</h1>
-                <p class="lead subtitle textsize">
+                <p class=" subtitle textsize">
                     The holy quran academy is an online platform that offers courses and lessons
                     on Quran recitation, memorization, translation and interpretation. You can
                     learn from qualified and experienced teachers who will guide you through every

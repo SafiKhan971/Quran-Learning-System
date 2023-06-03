@@ -25,6 +25,7 @@
                         <th> ID </th>
                         <th> Name </th>
                         <th> Email </th>
+                        <th> Package </th>
                         <th> Delete </th>
                     </tr>
                 </thead>
@@ -35,10 +36,16 @@
                             <td> {{ $user['name'] }} </td>
                             <td> {{ $user['email'] }} </td>
                             <td>
+                                <a class="btn btn-success" href={{ 'subscribe-package/' . $user['id'] }}>
+                                   Subscribe
+                                </a>
+                            </td>
+                            <td>
                                 <a class="btn btn-danger" href={{ 'delete-user/' . $user['id'] }}>
                                     <i class="fa fa-trash"></i>
                                 </a>
                             </td>
+                            
                         </tr>
                     @endforeach
                 </tbody>

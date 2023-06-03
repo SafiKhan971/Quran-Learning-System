@@ -31,7 +31,6 @@
                             <li><a href="{{url('careers')}}" class="text-body text-hover-primary">Careers</a></li>
                             <li><a href="{{url('downloads')}}" class="text-body text-hover-primary">Downloads</a></li>
                             <li><a href="{{url('blogs')}}" class="text-body text-hover-primary">Blog</a></li>
-
                         </ul>
                     </div>
                 </div>
@@ -40,20 +39,18 @@
                     <!-- contact -->
                     <div class="mb-4 mb-lg-0">
                         <h3 class="mb-3">Get In Touch</h3>
-                        <p style="color: #BE956B"><i class="bi bi-whatsapp"></i> USA: +92 3319279998 </p>
-                        <p style="color: #BE956B"><i class="bi bi-whatsapp"></i> UK: +92 3319279998 </p>
-                        <p style="color: #BE956B"><i class="bi bi-whatsapp"></i> PAK: +92 3319279998 </p>
-                        <p style="color: #BE956B"><i class="bi bi-envelope"></i> khansafi470@gmail.com </p>
+                        <a href="https://wa.link/w9jpe2"><p style="color: #BE9552"><i class="bi bi-whatsapp"></i> USA: +92 3417465608 </p></a>
+                        <a href="https://wa.link/w9jpe2"><p style="color: #BE9552"><i class="bi bi-whatsapp"></i> UK: +92 3417465608 </p></a>
+                        <a href="https://wa.link/w9jpe2"><p style="color: #BE9552"><i class="bi bi-whatsapp"></i> PAK: +92 3417465608 </p></a>
 
-
+                        <p style="color: #BE9552"><i class="bi bi-envelope"></i> khansafi470@gmail.com </p>
                     </div>
                 </div>
-            </div>
+            </div>  
             <!-- tiny footer -->
             <div class="row mt-8 border-top pt-4 align-items-center">
                 <div class="col-md-10 col-12">
                     <div class="d-flex fs-5 ">
-
                         <div>
                             &copy;
                             <span id="copyright"> 2018 -
@@ -70,7 +67,6 @@
                                 <li class="list-inline-item"><a href="#">Sitemap</a></li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-2 col-12">

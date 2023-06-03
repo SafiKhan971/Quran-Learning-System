@@ -2,7 +2,7 @@
     <x-slot name='title'> MDMS | Update Blog </x-slot>
     <x-slot name='page'> Update Blog </x-slot>
     <div class="container pl-5 pr-5">
-        <form action="update-blog" method="POST" enctype="multipart/form-data">
+        <form action="{{url('admin/update-blog')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <input type="hidden" name="id" value={{ $data['id'] }} />
 

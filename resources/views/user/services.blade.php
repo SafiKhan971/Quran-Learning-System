@@ -1,13 +1,7 @@
 @include('user/header')
 @include('user/navigation2')
 
-<style>
-    @media only screen and (max-width: 480px) {
-        .subtitle {
-            font-size: 14px;
-        }
-    }
-</style>
+
 
 <main>
     <!-- pageheader -->
@@ -16,8 +10,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center mt-4">
-                        <h1 class="display-6 fw-semi-bold">Our Services</h1>
-                        <p class="lead subtitle"> At holy quran academy, we offer a range of online courses and lessons to 
+                        <h1 class="display-6 fw-semi-bold">Our Courses</h1>
+                        <p class=" subtitle"> At holy quran academy, we offer a range of online courses and lessons to 
                             help you learn and understand the Quran, the holy book of Islam. Whether 
                             you want to recite, memorize, translate or interpret the Quran, we have 
                             qualified and experienced teachers who will guide you through every step of 
@@ -39,7 +33,7 @@
                 
                 <div class="col-lg-5">
                     
-                    <p class="lead subtitle">
+                    <p class=" subtitle">
                     We believe that learning Quran should be accessible, convenient, and affordable for everyone. That’s
                     why we offer free trial classes, flexible timings, and reasonable fees. You can choose the course 
                     that suits you best, and learn Quran from the comfort of your home. You can also benefit from our 

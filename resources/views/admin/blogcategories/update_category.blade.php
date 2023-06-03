@@ -2,7 +2,7 @@
     <x-slot name='title'> MDMS | Update Category </x-slot>
     <x-slot name='page'> Update Category </x-slot>
     <div class="container pl-5 pr-5">
-        <form action="updatecategory" method="POST">
+        <form action="{{url('admin/updatecategory')}}" method="POST">
             @csrf
 
             <div class="form-group pl-2 pr-2">

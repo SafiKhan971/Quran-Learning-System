@@ -198,6 +198,65 @@
                         </li>
 
 
+                        <!-- Teachers -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-users"></i>
+                                <p>
+                                    Teachers
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/admin/add-teacher" class="nav-link">
+                                        <i class="fa fa-plus nav-icon"></i>
+                                        <p>Add New Teacher</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/admin/teachers" class="nav-link">
+                                        <i class="fa fa-list nav-icon"></i>
+                                        <p>Teacher List</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Packages -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-dollar-sign"></i>
+                                <p>
+                                    Packages
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/admin/add-package" class="nav-link">
+                                        <i class="fa fa-plus nav-icon"></i>
+                                        <p>Add New Package</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/admin/packages" class="nav-link">
+                                        <i class="fa fa-list nav-icon"></i>
+                                        <p>Package List</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <!-- Subscriptions -->
+                        <li class="nav-item">
+                            <a href="/admin/subscriptions" class="nav-link">
+                                <i class="nav-icon fa fa-chart-line"></i>
+                                <p>Subscriptions</p>
+                            </a>
+                        </li>
+
 
                         <!-- Payments -->
                         <!-- <li class="nav-item">

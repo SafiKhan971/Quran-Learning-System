@@ -17,7 +17,7 @@
                 <div class="col-md-12">
                     <div class="text-center mt-4">
                         <h1 class="display-6 fw-semi-bold">Blogs</h1>
-                        <p class="lead subtitle">The blog section on our website is a treasure trove of valuable 
+                        <p class=" subtitle">The blog section on our website is a treasure trove of valuable 
                             information, covering a wide range of topics and offering insightful articles 
                             written by industry experts.  </p>
                     </div>
@@ -46,7 +46,7 @@
                                 <h3>
                                     <a href="{{url('blog_single', $item->slug)}}" class="text-inherit">{{ $item->name }}</a>
                                 </h3>
-                                <div class="lead subtitle">
+                                <div class=" subtitle">
                                     {!! Str::limit($item->description, 50) !!} 
                                 </div>
                                 <!-- meta -->

@@ -1,18 +1,6 @@
 @include('user/header')
 @include('user/navigation2')
 
-<style>
-    @media only screen and (max-width: 480px) {
-        .subtitle {
-            font-size: 14px;
-        }
-
-        .search{
-            margin-top: 20px;
-        }
-    }
-</style>
-
 <main>
     <section class="pt-4 pb-4">
         <div class="container">

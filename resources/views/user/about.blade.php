@@ -1,14 +1,5 @@
 @include('user/header')
 @include('user/navigation2')
-
-<style>
-    @media only screen and (max-width: 480px) {
-        .subtitle {
-            font-size: 14px;
-        }
-    }
-</style>
-
 <main>
     <!-- pageheader -->
     <section class="pt-4 pb-4 pb-lg-8">
@@ -35,7 +26,7 @@
                 </div>
                 <div class="col-lg-5">
                     <h1>Who we are</h1>
-                    <p class="lead subtitle">
+                    <p class=" subtitle">
                     Holy Quran Academy is an online platform that aims to provide quality Quran education to 
                     Muslims around the world. We offer various courses and programs that cater to different 
                     levels and needs of learners, from beginners to advanced students. Our mission is to help 
@@ -53,7 +44,7 @@
                 
                 <div class="col-lg-5">
                     
-                    <p class="lead subtitle">
+                    <p class=" subtitle">
                     We believe that learning Quran should be accessible, convenient, and affordable for everyone. That’s
                     why we offer free trial classes, flexible timings, and reasonable fees. You can choose the course 
                     that suits you best, and learn Quran from the comfort of your home. You can also benefit from our 
@@ -108,7 +99,7 @@
                                 </div>
                                 <h3>Our Vision</h3>
                                 <p class="mb-0">
-                                Our vision is to be a leading online Quran academy that provides high-quality Quran 
+                                Our vision is to be a ing online Quran academy that provides high-quality Quran 
                                 education to Muslims of all ages and backgrounds. We aspire to be a platform that 
                                 connects Quran learners and teachers from different parts of the world. 
                                 </p>

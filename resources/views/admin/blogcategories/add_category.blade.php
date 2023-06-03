@@ -2,7 +2,7 @@
     <x-slot name='title'> MDMS | Add Category </x-slot>
     <x-slot name='page'> Add Category </x-slot>
     <div class="container pl-5 pr-5">
-        <form action="add-category" method="POST" enctype="multipart/form-data">
+        <form action="{{url('admin/add-category')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group pl-2 pr-2">
                 <label> Title </label>

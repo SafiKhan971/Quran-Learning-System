@@ -38,7 +38,7 @@
                             <td> {{ $Category['id'] }} </td>
                             <td> {{ $Category['title'] }} </td>
                             <td> {{ $Category['slug'] }} </td>
-
+                            
                             <td>
                                 <a class="btn btn-danger" href={{ 'deletecategory/' . $Category['id'] }}>
                                     <i class="fa fa-trash"></i>

@@ -1,0 +1,83 @@
+.title {
+    font-size: 4rem;
+}
+
+.textsize {
+    font-size: 19px;
+}
+
+.demo {
+    width: 18rem;
+    height: 3.5rem;
+    font-size: 20px !important;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    height: 50px;
+    width: 175px;
+}
+
+.topbar p{
+    font-size: 16px;
+    color: #BE9552;
+}
+
+@media only screen and (max-width: 480px) {
+    .title2 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+
+    .demoButton {
+        width: 178px;
+        height: 45px;
+        font-size: 13px !important;
+        margin-top: 0px;
+    }
+
+     
+
+    .image2 {
+        margin-left: 102px;
+    }
+
+    .search {
+        margin-top: 20px;
+    }
+
+    .topbar p{
+        font-size: 12px;
+        color: #BE9552;
+    }
+
+    .phone{
+        display: none;
+    }
+}

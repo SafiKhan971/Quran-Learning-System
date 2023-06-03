@@ -14,11 +14,17 @@
     <link rel="stylesheet" href="{{ asset('assets/fonts/fontello/css/fontello.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custome.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('css/whatsapp-icon.css') }}">
+    <script src="{{ asset('assets/js/whatsapp-icon.js') }}"></script>
+
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
     <title>Homepage v1 - Wedding Listing and Directory Template - RealWed</title>
 
 </head>
+
 <body>
-    
+    <div id="whatsapp-icon" class="whatsapp-icon">
+        <i class="bi bi-whatsapp"></i>
+    </div>

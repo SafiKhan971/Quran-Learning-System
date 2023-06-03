@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\User;
+use App\Models\Package;
+use App\Models\Teacher;
+use Illuminate\Support\Str;
 use App\Models\BlogCategory;
+use App\Models\Subscription;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 
 
 class AdminController extends Controller
@@ -221,5 +224,165 @@ class AdminController extends Controller
         $category->save();
 
         return redirect('/admin/categories')->with('success', 'Category Updated Successfully');
+    }
+
+    function addTeacher(Request $request)
+    {
+    
+        $request->validate(
+            [
+                'name' => 'required',
+                'email' => 'required',
+                'phone' => 'required',
+            ]
+        );
+    
+        $teacher =  new Teacher;
+        $teacher->name = $request->input('name');
+        $teacher->email = $request->input('email');
+        $teacher->phone = $request->input('phone');
+        $teacher->address = $request->input('address');
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->getClientOriginalName();
+
+            $request->file('image')->storeAs('public/', $image);
+
+            $teacher->image = $image;
+        }
+
+        $teacher->save();
+    
+        return redirect('/admin/teachers/')->with('success', 'Teacher Added Successfully');
+    }
+
+    public function teacherList()
+    {
+       $teachers = Teacher::all();
+       return view('admin.teachers.index', compact('teachers'));
+    }
+
+    function deleteTeacher($id)
+    {
+        $data = Teacher::find($id);
+        $data->delete();
+
+        return redirect()->back()->with('danger', 'Teacher Deleted Successfully');
+    }
+
+    function showTeacher($id)
+    {
+        $data = Teacher::find($id);
+
+        return view('admin.teachers.update_teacher', ['data' => $data]);
+    }
+
+    function updateTeacher(Request $request)
+    {
+        $teacher =  Teacher::find($request->id);
+        $teacher->name = $request->input('name');
+        $teacher->email = $request->input('email');
+        $teacher->phone = $request->input('phone');
+        $teacher->address = $request->input('address');
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->getClientOriginalName();
+
+            $request->file('image')->storeAs('public/', $image);
+
+            $teacher->image = $image;
+        }
+
+        $teacher->save();
+
+        return redirect('/admin/teachers')->with('success', 'Teacher Updated Successfully');
+    }
+
+    function addPackage(Request $req)
+    {
+
+        $req->validate(
+            [
+                'name' => 'required',
+                'total_classes' => 'required',
+                'price' => 'required',
+
+            ]
+        );
+
+        $package =  new Package;
+        $package->name = $req->input('name');
+        $package->total_classes = $req->input('total_classes');
+        $package->price = $req->input('price');
+
+
+
+        $package->save();
+
+        return redirect('/admin/packages/')->with('success', 'Package Added Successfully');
+    }
+
+
+    public function packageList()
+    {
+        $packages = Package::all();
+        return view('admin.packages.index', compact('packages'));
+    }
+
+    function deletePackage($id)
+    {
+        $data = Package::find($id);
+        $data->delete();
+
+        return redirect()->back()->with('danger', 'Package Deleted Successfully');
+    }
+
+    function showPackage($id)
+    {
+        $data = Package::find($id);
+
+        return view('admin.packages.update_package', ['data' => $data]);
+    }
+
+    function updatePackage(Request $req)
+    {
+        $package =  Package::find($req->id);
+        $package->name = $req->input('name');
+        $package->total_classes = $req->input('total_classes');
+        $package->price = $req->input('price');
+        $package->save();
+
+        return redirect('/admin/packages')->with('success', 'Package Updated Successfully');
+    }
+
+    public function subscribePackage($id)
+    {
+        $data = DB::table('subscriptions')->where('user_id', $id)->select('status')->first();
+        $user = DB::table('users')->where('id', $id)->select('id as user_id')->first();
+        $packages = Package::all();
+        return view('admin.users.subscribe_package', compact('data', 'packages', 'user'));
+    }
+
+    public function confirmPackage(Request $req)
+    {
+
+        // dd($id);
+        $subscription = new Subscription;
+        $subscription->plan_id = $req->input('plan_id');
+        $subscription->subscription_date = $req->input('subscription_date');
+        $subscription->status = $req->input('status');
+        $subscription->user_id = $req->input('user_id');
+        $subscription->save();
+
+        return redirect('/admin/users')->with('success', 'Package Subscribed Successfully');
+    }
+
+    public function Subscriptions()
+    {
+        $data = DB::table("subscriptions")
+            ->join('users', 'users.id', '=', 'subscriptions.user_id')
+            ->join('packages', 'packages.id', '=', 'subscriptions.plan_id')
+            ->select('subscriptions.*', 'users.name', 'users.email', 'users.phone', 'packages.name as package_name')
+            ->get();
+
+            return view('admin.users.subscriptions', compact('data'));
     }
 }

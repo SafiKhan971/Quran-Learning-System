@@ -40,28 +40,37 @@ Route::post('login', [UserController::class, 'login']);
 Route::post('logout', [UserController::class, 'logout']);
 Route::get('profile', [UserController::class, 'profile']);
 Route::post('update-account', [UserController::class, 'updateAccount']);
+Route::get('packages', [UserController::class, 'Packages']);
 
 
 
 
 Route::view('about', 'user.about');
 Route::view('services', 'user.services');
-Route::view('packages', 'user.packages');
+// Route::view('packages', 'user.packages');
 Route::view('payments', 'user.payments');
 Route::view('careers', 'user.careers');
 Route::view('downloads', 'user.downloads');
 Route::view('contact', 'user.contact');
 
-Route::group(['prefix' => 'admin'], function () {
+
+
+Route::group(['prefix' => 'admin', 'middleware' => 'check_user'], function () {
 
     Route::view('/dashboard', 'admin.index');
-    Route::view('login', 'admin.login');
-    Route::post('login', [AdminController::class, 'login']);
+
 
 
     // users
     Route::get('/users', [AdminController::class, 'userList'])->name('admin.users');
     Route::get('/delete-user/{id}',[AdminController::class,'deleteUser']);
+    Route::get('/subscribe-package/{id}',[AdminController::class,'subscribePackage']);
+    Route::post('/subscribe-package',[AdminController::class,'confirmPackage']);
+
+    // subscriptions
+    Route::get('/subscriptions',[AdminController::class,'Subscriptions']);
+
+
 
 
     // blogs
@@ -81,4 +90,20 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('updatecategory/{id}',[AdminController::class,'showCategory']);
     Route::post('updatecategory/{id}',[AdminController::class,'updateCategory']);
 
+
+    // Teachers
+    Route::get('/teachers', [AdminController::class, 'teacherList']);
+    Route::view('/add-teacher','admin.teachers.add_teacher');
+    Route::post('add-teacher',[AdminController::class,'addTeacher']);
+    Route::get('/delete-teacher/{id}',[AdminController::class,'deleteTeacher']);
+    Route::get('update-teacher/{id}',[AdminController::class,'showTeacher']);
+    Route::post('update-teacher',[AdminController::class,'updateTeacher']);
+
+    // Packages
+    Route::get('/packages', [AdminController::class, 'packageList']);
+    Route::view('/add-package','admin.packages.add_package');
+    Route::post('add-package',[AdminController::class,'addPackage']);
+    Route::get('/delete-package/{id}',[AdminController::class,'deletePackage']);
+    Route::get('update-package/{id}',[AdminController::class,'showPackage']);
+    Route::post('update-package',[AdminController::class,'updatePackage']);
 });
