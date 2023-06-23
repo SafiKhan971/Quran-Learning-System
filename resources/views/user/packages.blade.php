@@ -26,13 +26,19 @@
     <!-- pricing table start -->
     <section class="py-lg-10 py-6">
         <div class="container">
+            <div class="d-flex justify-content-around">
+                <button id="pak" class="btn btn-primary country" data-country_name="Pakistan"> PAK </button>
+                <button id="usa" class="btn btn-primary country" data-country_name="USA"> USA </button>
+                <button id="uk" class="btn btn-primary country" data-country_name="UK"> UK </button>
+            </div>
+            <p class="text-center"> Packages for <span id="country"></span> </p>
             <div class="row">
                 @foreach ($packages as $package)
                     <div class="col-md-6  col-sm-6 col-lg-3 col-xl-3">
                         <div class="card bg-primary text-center rounded border-0 bg-opacity-10 mb-3">
                             <div class="card-body py-10">
                                 <h2 class="fs-3">{{ $package->name }}</h2>
-                                <h4 class="fw-bold h1 mt-3 mb-5">${{ $package->price }} </h4>
+                                <h4 class="fw-bold h1 mt-3 mb-5" id="price">  </h4>
                                 <div>
                                     <ul class="list-unstyled">
                                         <li class="mb-2"><span class="me-2"><svg xmlns="http://www.w3.org/2000/svg"
@@ -83,6 +89,8 @@
                     </div>
                     @endforeach
             </div>
+
+            
     </section>
 
     <!-- pricing table close -->
@@ -158,10 +166,36 @@
             </div>
         </div>
     </section>
-
-
-
-
 </main>
+
+<script>
+    $(document).ready(function () {
+        $('#price').html('Rs 50');
+        $('.country').click(function (e) { 
+            e.preventDefault();
+            name = $(this).data('country_name');
+            if(name == 'Pakistan')
+            {
+                $('#price').html('Rs 50');
+                $('#country').html('Pakistan');
+            }
+            else if(name == 'USA')
+            {
+                // alert(name);
+                $('#price').html('$30');
+                $('#country').html('USA');
+            }
+            else if(name == 'UK')
+            {
+                // alert(name);
+                $('#price').html('€20');
+                $('#country').html('UK');
+            }
+            // alert(name);
+            // $('#price').html('Rs/. 50');
+        });
+    });
+</script>
+
 @include('user/footer_navigation')
 @include('user/footer')

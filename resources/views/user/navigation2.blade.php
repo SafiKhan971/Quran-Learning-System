@@ -11,7 +11,6 @@
                 <nav class="navbar navbar-expand-lg" >
                     <a class="navbar-brand" href="index.html"> 
                         <img src="{{asset('assets/images/logo/logo-new.png')}}" class="logo logomobile" alt="">
-
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>

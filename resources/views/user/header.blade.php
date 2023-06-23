@@ -16,11 +16,11 @@
 
     <link rel="stylesheet" href="{{ asset('css/whatsapp-icon.css') }}">
     <script src="{{ asset('assets/js/whatsapp-icon.js') }}"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
-    <title>Homepage v1 - Wedding Listing and Directory Template - RealWed</title>
+    <title>@yield('title')</title>
 
 </head>
 

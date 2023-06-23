@@ -150,7 +150,7 @@
                         <!-- Blogs -->
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fa fa-copy"></i>
+                                <i class="nav-icon fa fa-receipt"></i>
                                 <p>
                                     Blogs
                                     <i class="fas fa-angle-left right"></i>
@@ -192,6 +192,31 @@
                                     <a href="/admin/categories" class="nav-link">
                                         <i class="fa fa-list nav-icon"></i>
                                         <p>Category List</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Courses -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-chart-pie"></i>
+                                <p>
+                                    Courses
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/admin/add-course" class="nav-link">
+                                        <i class="fa fa-plus nav-icon"></i>
+                                        <p>Add New Course</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/admin/courses" class="nav-link">
+                                        <i class="fa fa-list nav-icon"></i>
+                                        <p>Course List</p>
                                     </a>
                                 </li>
                             </ul>

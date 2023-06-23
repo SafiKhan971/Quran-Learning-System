@@ -1,3 +1,6 @@
+@section('title')
+    My Page
+@endsection
 @include('user/header')
 @include('user/navigation2')
 <main>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\User;
+use App\Models\Course;
 use App\Models\Package;
 use App\Models\Teacher;
 use Illuminate\Support\Str;
@@ -12,7 +13,6 @@ use App\Models\Subscription;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-
 
 class AdminController extends Controller
 {
@@ -166,6 +166,94 @@ class AdminController extends Controller
         return redirect()->back()->with('danger', 'Blog Deleted Successfully');
     }
 
+    function addCourse(Request $req)
+    {
+
+        // dd($req->all());
+
+        // $req->validate(
+        //     [
+        //         'title' => 'required',
+        //         'description' => 'required',
+        //         'category_id' => 'required',
+        //         'slug' => 'required',
+        //         'meta_title' => 'required',
+        //         'meta_description' => 'required',
+        //         'meta_keywords' => 'required',
+        //         'status' => 'required',
+        //     ]
+        // );
+
+        $course =  new Course;
+        $course->name = $req->input('title');
+        $course->description = $req->input('description');
+        $course->slug = Str::slug($req->input('slug'));
+        $course->meta_title = $req->input('meta_title');
+        $course->meta_description = $req->input('meta_description');
+        $course->meta_keyword = $req->input('meta_keywords');
+
+
+        if ($req->hasFile('image')) {
+            $image = $req->file('image')->getClientOriginalName();
+            $req->file('image')->storeAs('public/', $image);
+            $course->image = $image;
+        }
+        $course->save();
+
+        return redirect('/admin/courses/')->with('success', 'Course Added Successfully');
+    }
+
+    public function courseList(Request $req)
+    {
+
+        $data = DB::table("courses")
+            ->select( 'id', 'name', 'slug', 'image')
+            ->get();
+
+        return view('admin.courses.index', compact('data'));
+    }
+
+    function deleteCourse($id)
+    {
+        $data = Course::find($id);
+        $data->delete();
+
+        return redirect()->back()->with('danger', 'Course Deleted Successfully');
+    }
+
+    function showCourse($id)
+    {
+        $data = Course::find($id);
+        return view('admin.courses.update_course', ['data' => $data]);
+    }
+
+    function updateCourse(Request $req)
+    {
+        $course =  Course::find($req->id);
+        $course->name = $req->input('title');
+        $course->description = $req->input('description');
+        $course->slug = Str::slug($req->input('slug'));
+        $course->meta_title = $req->input('meta_title');
+        $course->meta_description = $req->input('meta_description');
+        $course->meta_keyword = $req->input('meta_keywords');
+
+        if ($req->hasFile('image')) {
+            $image = $req->file('image')->getClientOriginalName();
+
+            $req->file('image')->storeAs('public/', $image);
+
+            $course->image = $image;
+        }
+
+        $course->update();
+
+        return redirect('/admin/courses')->with('success', 'Course Updated Successfully');
+    }
+
+
+
+
+
     function addCategory(Request $req)
     {
 
@@ -225,6 +313,9 @@ class AdminController extends Controller
 
         return redirect('/admin/categories')->with('success', 'Category Updated Successfully');
     }
+
+
+
 
     function addTeacher(Request $request)
     {
@@ -319,7 +410,6 @@ class AdminController extends Controller
 
         return redirect('/admin/packages/')->with('success', 'Package Added Successfully');
     }
-
 
     public function packageList()
     {

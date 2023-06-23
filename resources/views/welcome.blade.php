@@ -4,15 +4,15 @@
 @include('user/navigation')
 
 <!-- hero section -->
-<section class="py-14 py-lg-21" style="background: url(assets/images/banner/hero-img.jpg)no-repeat; background-size: cover; background-position: center center; height:100vh">
+<section class="py-14 py-lg-16" style="background: url(assets/images/banner/hero-2.jpg)no-repeat; background-size: cover; background-position: center center; height:80vh">
     <div class="container">
         <div class="row justify-content-center">
 
             <!-- hero captions -->
             <div class="col-md-12 col-sm-2 text-center title">
                 <img class="img-fluid" src="{{ asset('assets/images/banner/bsml-txt.png') }}" alt="" srcset="">
-                <h2 class="text-light mt-3 subtitle">Transform Your Spiritual Journey with</h2>
-                <h3 class="text-light title title2">Holy Quran Academy</h3>
+                <h2 class="subtitle"><span class="transform" style="padding: 10px; border-radius:5px; background-color:white; color: #BE9552;">Transform Your Spiritual Journey with</span></h2>
+                <h3 class="title title2 mt-5"><span class="quranlearn" style="padding: 10px; border-radius:5px; background-color:white; color: #BE9552;">Holy Quran Academy</span></h3>
                 <a href="" class="btn btn-primary demo demoButton shadow-sm">Request Demo Class</a>
             </div>
         </div>
@@ -69,8 +69,6 @@
 </section>
 
 <!-- Few Words -->
-
-
 <section>
     <div class="container">
         <div class="row align-items-center mb-3">
@@ -137,14 +135,12 @@
     </div>
 </section>
 
-
-
 <!-- Blogs -->
 <section class="pb-lg-14 pb-8">
     <div class="container">
         <div class="text-center mb-3">
             <p>Latest Blogs</p>
-            <h2> News & Updates </h2>
+            <h2> Our Courses </h2>
         </div>
         <div class="row">
             <!-- col -->
@@ -166,10 +162,8 @@
             </div>
             @endforeach
         </div>
-
     </div>
 </section>
 <!-- footer -->
-
 @include('user/footer_navigation')
 @include('user/footer')

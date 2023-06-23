@@ -41,7 +41,6 @@
                             <td> {{ $package['total_classes'] }} </td>
                             <td> {{ $package['price'] }} </td>
 
-                            
                             <td>
                                 <a class="btn btn-danger" href={{ 'delete-package/' . $package['id'] }}>
                                     <i class="fa fa-trash"></i>

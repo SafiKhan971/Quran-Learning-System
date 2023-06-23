@@ -23,6 +23,8 @@ class UserController extends Controller
         return view('welcome', compact('blogs'));
     }
 
+    // Blogs
+
     public function Blogs($slug = null , Request $req)
     {
 
@@ -82,6 +84,36 @@ class UserController extends Controller
             ->get();
 
         // dd($data);
+    }
+
+    // Courses
+    public function Courses($slug = null , Request $req)
+    {
+
+        // dd($req->all());
+
+        if($req->search !== null)
+        {
+            $courses = DB::table("courses")
+                ->select('name', 'slug', 'image' )
+                ->where('name', 'like', '%'. $req->search. '%' )
+                ->get();
+        }
+
+        elseif ($slug !== null) {
+            $courses = DB::table("courses")
+                ->select('name', 'slug', 'image' )
+                ->where('slug', '=', $slug )
+                ->get();
+        }
+        else
+        {
+            $courses = DB::table("courses")
+                ->select('name', 'slug', 'image' )
+                ->get();
+        }
+
+        return view('user.courses', compact('courses'));
     }
 
     public function profile()

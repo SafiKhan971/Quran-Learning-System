@@ -1,5 +1,5 @@
 @include('user/header')
-@include('user/navigation2')
+@include('user/navigation')
 
 <style>
     @media only screen and (max-width: 480px) {

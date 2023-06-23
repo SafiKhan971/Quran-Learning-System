@@ -25,11 +25,17 @@ Route::view('register', 'user.register');
 Route::view('login', 'user.login');
 Route::get('/',[UserController::class, 'Welcome']);
 // Route::view('blog_single', 'user.blog_single');
+
+// blogs
 Route::get('blog_single/{slug}/',[UserController::class, 'singleBlog']);
 Route::get('cat_blog/{id}',[UserController::class, 'recentPost']);
 Route::get('blogs/{slug}',[UserController::class, 'Blogs']);
 Route::get('blogs',[UserController::class, 'Blogs']);
 Route::post('search-blog',[UserController::class, 'Blogs']);
+
+
+// courses
+Route::get('courses',[UserController::class, 'Courses']);
 
 
 
@@ -46,8 +52,6 @@ Route::get('packages', [UserController::class, 'Packages']);
 
 
 Route::view('about', 'user.about');
-Route::view('services', 'user.services');
-// Route::view('packages', 'user.packages');
 Route::view('payments', 'user.payments');
 Route::view('careers', 'user.careers');
 Route::view('downloads', 'user.downloads');
@@ -80,6 +84,15 @@ Route::group(['prefix' => 'admin', 'middleware' => 'check_user'], function () {
     Route::get('updateblog/{id}',[AdminController::class,'showBlog']);
     Route::post('updateblog/{id}',[AdminController::class,'updateBlog']);
     Route::get('/deleteblog/{id}',[AdminController::class,'deleteBlog']);
+
+    // courses
+    Route::get('/courses', [AdminController::class, 'courseList'])->name('admin.courses');
+    Route::view('/add-course', 'admin.courses.add_course');
+    Route::post('add-course',[AdminController::class,'addCourse']);
+    Route::get('updatecourse/{id}',[AdminController::class,'showCourse']);
+    Route::post('update-course',[AdminController::class,'updateCourse']);
+    Route::get('/deletecourse/{id}',[AdminController::class,'deleteCourse']);
+
 
 
     // blog categories
